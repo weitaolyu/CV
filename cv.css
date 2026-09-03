@@ -1,0 +1,170 @@
+@page {
+  size: A4;
+  margin: 18mm 16mm;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #1f2933;
+  font-size: 11pt;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #0f3d3e;
+  margin: 0 0 6px;
+}
+
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  border-bottom: 2px solid #0f766e;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.cv-heading h1 {
+  font-size: 22pt;
+}
+
+.cv-subtitle {
+  margin: 0 0 2px;
+  color: #475569;
+  font-size: 10pt;
+}
+
+.cv-role {
+  margin: 0;
+  font-size: 10.5pt;
+  color: #0f766e;
+  font-weight: 600;
+}
+
+.cv-contact {
+  font-style: normal;
+  font-size: 9.5pt;
+  text-align: right;
+  color: #334155;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  white-space: nowrap;
+}
+
+.cv-body {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  gap: 4%;
+  align-items: start;
+}
+
+.cv-sidebar,
+.cv-main {
+  min-width: 0;
+}
+
+.cv-sidebar section {
+  margin-bottom: 18px;
+}
+
+.cv-sidebar h2 {
+  font-size: 11pt;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid #cbd5e1;
+  padding-bottom: 4px;
+}
+
+.cv-sidebar ul {
+  margin: 8px 0 0;
+  padding-left: 16px;
+}
+
+.cv-sidebar li {
+  margin-bottom: 6px;
+  font-size: 9.5pt;
+}
+
+.cv-sidebar p {
+  font-size: 9.5pt;
+  margin: 8px 0 0;
+}
+
+.cv-main .cv-section {
+  margin-bottom: 20px;
+  break-inside: avoid;
+}
+
+.cv-main h2 {
+  font-size: 13pt;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid #0f766e;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+.cv-timeline,
+.cv-publications {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cv-timeline li {
+  display: grid;
+  grid-template-columns: 26% 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+  break-inside: avoid;
+}
+
+.cv-timeline time {
+  font-size: 9.5pt;
+  color: #475569;
+  font-weight: 600;
+}
+
+.cv-timeline h3 {
+  font-size: 11pt;
+  margin: 0 0 2px;
+}
+
+.cv-timeline p {
+  margin: 0;
+  font-size: 10pt;
+}
+
+.cv-publications li {
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+
+.pub-title {
+  font-weight: 700;
+  margin: 0 0 2px;
+}
+
+.cv-publications p {
+  margin: 0;
+  font-size: 10pt;
+}
+
+.cv-footer {
+  margin-top: 24px;
+  border-top: 1px solid #cbd5e1;
+  padding-top: 8px;
+  font-size: 9pt;
+  color: #64748b;
+  text-align: center;
+}
