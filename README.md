@@ -8,6 +8,8 @@
 - `styles.css`: 页面视觉和响应式布局。
 - `script.js`: 年份更新、占位链接防跳转、图片 fallback。
 - `Curriculum Vita.pdf`: PDF 简历下载文件，页面已经链接到它。
+- `cv.html` / `cv.css`: PDF 的可维护源文件。
+- `scripts/build-cv.sh`: 使用 Chromium 从源文件重新生成 PDF。
 - `assets/mkid-camera-visual.png`: 网页里的科研视觉图。
 
 ## 需要你替换的位置
@@ -25,3 +27,13 @@
 `Settings` -> `Pages` -> `Build and deployment` -> `Deploy from a branch`
 
 选择主分支和 `/root`，保存后等待部署完成即可。
+
+## 重新生成 PDF
+
+在仓库根目录执行：
+
+```sh
+./scripts/build-cv.sh
+```
+
+脚本会覆盖 `Curriculum Vita.pdf`，因此网页现有的下载链接无需修改。

@@ -1,0 +1,34 @@
+@page { size: A4; margin: 16mm 17mm 15mm; }
+:root { --ink: #172a3a; --muted: #52616d; --accent: #176b73; --line: #d7e0e3; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); font: 9.5pt/1.45 "Aptos", "Segoe UI", Arial, sans-serif; }
+a { color: inherit; text-decoration: none; }
+.cv-header { display: flex; justify-content: space-between; gap: 24px; padding-bottom: 15px; border-bottom: 2px solid var(--accent); }
+.eyebrow { margin: 0 0 5px; color: var(--accent); font-size: 8pt; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+h1 { margin: 0; font-size: 31pt; letter-spacing: -.04em; line-height: 1; }
+.role { margin: 7px 0 0; color: var(--muted); font-size: 11pt; }
+address { display: grid; align-content: end; gap: 3px; min-width: 205px; color: var(--muted); font-style: normal; font-size: 8.5pt; text-align: right; }
+address a:first-child { color: var(--accent); font-weight: 700; }
+main { display: grid; grid-template-columns: 31% 1fr; gap: 26px; padding-top: 18px; }
+aside { padding-right: 18px; border-right: 1px solid var(--line); }
+section { break-inside: avoid; margin: 0 0 19px; }
+h2 { margin: 0 0 9px; padding-bottom: 5px; border-bottom: 1px solid var(--line); color: var(--accent); font-size: 9pt; letter-spacing: .13em; text-transform: uppercase; }
+h3 { margin: 0 0 2px; font-size: 10.5pt; line-height: 1.25; }
+p { margin: 0; color: var(--muted); }
+.tags { display: flex; flex-wrap: wrap; gap: 5px; margin: 0; padding: 0; list-style: none; }
+.tags li { padding: 4px 7px; border: 1px solid #c9dcdd; border-radius: 3px; color: var(--accent); font-size: 8pt; }
+dl { margin: 0; }
+dt { margin-top: 8px; color: var(--ink); font-weight: 700; }
+dt:first-child { margin-top: 0; }
+dd { margin: 1px 0 0; color: var(--muted); font-size: 8.5pt; }
+.content section + section { margin-top: 22px; }
+.entry { display: grid; grid-template-columns: 82px 1fr; gap: 12px; padding: 0 0 11px; }
+.entry + .entry { padding-top: 11px; border-top: 1px solid #edf1f2; }
+.date { color: var(--accent); font-size: 8.5pt; font-weight: 700; }
+.publications { display: grid; gap: 9px; margin: 0; padding-left: 18px; }
+.publications li { padding-left: 3px; color: var(--muted); }
+.publications strong { color: var(--ink); font-weight: 700; }
+.publications a:hover, footer a { color: var(--accent); }
+.project { padding: 10px 12px; border-left: 3px solid var(--accent); background: #f2f7f7; }
+footer { margin-top: 7px; padding-top: 8px; border-top: 1px solid var(--line); color: var(--muted); font-size: 8pt; }
+@media print { a { text-decoration: none; } }
