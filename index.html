@@ -2,28 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
     <title>Wei-Tao Lyu | Academic CV</title>
+
     <meta
       name="description"
       content="Academic CV website for Wei-Tao Lyu, postdoctoral fellow in physics and astronomical instrumentation."
     />
-    <meta property="og:title" content="Wei-Tao Lyu | Academic CV" />
+
+    <meta
+      property="og:title"
+      content="Wei-Tao Lyu | Academic CV"
+    />
+
     <meta
       property="og:description"
       content="Research profile, publications, projects, and academic background."
     />
+
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/config2.png" />
+
     <link rel="preload" href="assets/config2.png" as="image" />
     <link rel="stylesheet" href="styles.css" />
+
+    <script src="script.js" defer></script>
   </head>
+
   <body>
+    <a class="skip-link" href="#top">
+      Skip to main content
+    </a>
+
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Wei-Tao Lyu home">
+      <a
+        class="brand"
+        href="#top"
+        aria-label="Wei-Tao Lyu home"
+      >
         <span class="brand-mark" aria-hidden="true">WT</span>
         <span>Wei-Tao Lyu</span>
       </a>
+
       <nav class="nav" aria-label="Primary navigation">
         <a href="#expertise">Expertise</a>
         <a href="#publications">Publications</a>
@@ -33,43 +58,94 @@
     </header>
 
     <main id="top">
-      <section class="hero section-band">
+      <!-- Introduction -->
+      <section
+        class="hero section-band"
+        aria-labelledby="profile-title"
+      >
         <div class="shell hero-layout">
           <div class="hero-copy">
-            <p class="eyebrow">Postdoctoral Fellow · Department of Physics · CUHK</p>
-            <h1>Wei-Tao Lyu</h1>
-            <p class="lead">
-              Astronomical instrumentation researcher working on superconducting
-              Microwave Kinetic Inductance Detectors, submillimetre camera systems,
-              cryogenic integration, and readout characterization.
+            <p class="eyebrow">
+              Postdoctoral Fellow · Department of Physics · CUHK
             </p>
+
+            <h1 id="profile-title">Wei-Tao Lyu</h1>
+
+            <p class="lead">
+              Astronomical instrumentation researcher working on
+              superconducting Microwave Kinetic Inductance Detectors,
+              submillimetre camera systems, cryogenic integration,
+              and readout characterization.
+            </p>
+
             <div class="hero-actions" aria-label="Primary actions">
-              <a class="button primary" href="./WeiTaoLyu_CV.pdf">View CV PDF</a>
-              <a class="button" href="mailto:weitaolyu@cuhk.edu.hk">Email</a>
-              <!-- TODO: Replace # with your Google Scholar / personal profile URL. -->
-              <a class="button ghost" href="https://orcid.org/0000-0002-3845-4257" data-placeholder-link>Scholar</a>
+              <button
+                class="button primary cv-export"
+                type="button"
+                data-export-pdf
+                aria-describedby="pdf-export-help"
+              >
+                Export CV as PDF
+              </button>
+
+              <a
+                class="button"
+                href="mailto:weitaolyu@cuhk.edu.hk"
+              >
+                Email
+              </a>
+
+              <a
+                class="button ghost"
+                href="https://orcid.org/0000-0002-3845-4257"
+              >
+                ORCID
+              </a>
             </div>
+
+            <p class="export-help" id="pdf-export-help">
+              Export the current CV using your browser’s
+              “Save as PDF” option.
+            </p>
+
+            <noscript>
+              <p class="export-help">
+                JavaScript is disabled. Use Ctrl+P or Command+P
+                and choose “Save as PDF” to export this CV.
+              </p>
+            </noscript>
           </div>
 
-          <aside class="profile-panel" aria-label="Profile summary">
+          <aside
+            class="profile-panel"
+            aria-label="Profile summary"
+          >
             <div class="portrait" data-image-shell>
-              <!-- TODO: Add your portrait as assets/profile.jpg, or change the src below. -->
               <img
                 src="assets/lwt.jpg"
                 alt="Portrait of Wei-Tao Lyu"
                 data-fallback-image
               />
-              <span class="portrait-fallback" aria-hidden="true">WT</span>
+
+              <span
+                class="portrait-fallback"
+                aria-hidden="true"
+              >
+                WT
+              </span>
             </div>
+
             <dl class="profile-facts">
               <div>
                 <dt>Focus</dt>
                 <dd>Submillimetre polarimetry and MKIDs</dd>
               </div>
+
               <div>
                 <dt>Institution</dt>
                 <dd>The Chinese University of Hong Kong</dd>
               </div>
+
               <div>
                 <dt>Location</dt>
                 <dd>Hong Kong</dd>
@@ -79,135 +155,213 @@
         </div>
       </section>
 
-      <section class="section-band visual-band" aria-label="Research visual">
+      <!-- Research image -->
+      <section
+        class="section-band visual-band"
+        aria-labelledby="research-visual-title"
+      >
         <div class="shell visual-layout">
           <div>
             <p class="section-kicker">Research Scope</p>
-            <h2>MKID array inside ADR for submillimetre polarimeter ROGer</h2>
+
+            <h2 id="research-visual-title">
+              MKID array inside ADR for submillimetre polarimeter ROGer
+            </h2>
           </div>
+
           <figure class="research-visual" data-image-shell>
             <img
               src="assets/config2.png"
-              alt="Abstract visual of a cryogenic optical path and MKID detector array"
+              alt="Cryogenic optical path and MKID detector array for the ROGer submillimetre polarimeter"
               data-fallback-image
             />
+
+            <div class="visual-fallback" aria-hidden="true">
+              <span>ROGer</span>
+              <p>MKID array and cryogenic optical system</p>
+            </div>
+
             <figcaption>
-              MKID array and cryogenic optical path for submillimetre astronomical cameras.
+              MKID array and cryogenic optical path for
+              submillimetre astronomical cameras.
             </figcaption>
           </figure>
         </div>
       </section>
 
-      <section class="section" id="expertise">
+      <!-- Expertise -->
+      <section
+        class="section"
+        id="expertise"
+        aria-labelledby="expertise-title"
+      >
         <div class="shell">
           <div class="section-heading">
             <p class="section-kicker">Research Expertise</p>
-            <h2>MKIDs and Polarimetry</h2>
+            <h2 id="expertise-title">MKIDs and Polarimetry</h2>
           </div>
+
           <div class="expertise-grid">
             <article>
-              <span class="card-index">01</span>
-              <h3>MKIDs Design and Characterization</h3>
+              <span class="card-index" aria-hidden="true">01</span>
+
+              <h3>MKID Design and Characterization</h3>
+
               <p>
-                Design and characterization of Microwave Kinetic Inductance
-                Detectors for astronomical instrumentation.
+                Design and characterization of Microwave Kinetic
+                Inductance Detectors for astronomical instrumentation.
               </p>
             </article>
+
             <article>
-              <span class="card-index">02</span>
-              <h3>Submm Optics Design</h3>
+              <span class="card-index" aria-hidden="true">02</span>
+
+              <h3>Submillimetre Optics Design</h3>
+
               <p>
-                Design and integrate a submm optics.
+                Design and integration of submillimetre optical systems.
               </p>
             </article>
+
             <article>
-              <span class="card-index">03</span>
-              <h3>Submm Polarimetry Design</h3>
+              <span class="card-index" aria-hidden="true">03</span>
+
+              <h3>Submillimetre Polarimetry Design</h3>
+
               <p>
-                Design and integrate a submm polarimetry
+                Design and integration of submillimetre
+                polarimetric instruments.
               </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section muted-section" id="publications">
+      <!-- Publications -->
+      <section
+        class="section muted-section"
+        id="publications"
+        aria-labelledby="publications-title"
+      >
         <div class="shell">
           <div class="section-heading split-heading">
             <div>
               <p class="section-kicker">Selected Publications</p>
-              <h2>Recent and representative research outputs</h2>
+
+              <h2 id="publications-title">
+                Recent and representative research outputs
+              </h2>
             </div>
-            <!-- TODO: Replace # with a full publication list, ORCID, or Google Scholar URL. -->
-            <a class="text-link" href="#" data-placeholder-link>Full publication list</a>
+
+            <a
+              class="text-link publication-profile-link"
+              href="https://orcid.org/0000-0002-3845-4257"
+            >
+              ORCID profile <span aria-hidden="true">↗</span>
+            </a>
           </div>
 
           <ol class="publication-list">
-              <li>
+            <li>
               <article>
-                <a href="https://iopscience.iop.org/article/10.1088/1361-6668/ae9f9b/meta?login=true" data-placeholder-link>
-                  A global fitting algorithm for notch type resonator arrays in MKIDs
+                <a
+                  href="https://iopscience.iop.org/article/10.1088/1361-6668/ae9f9b/meta?login=true"
+                >
+                  A global fitting algorithm for notch type resonator
+                  arrays in MKIDs
                 </a>
+
                 <p>
-                  Wei-tao Lyu, Hua-Bai Li, Jie Hu, Sheng-Cai Shi, Qiang Zhi and Jing Li. (2026).
-                  <em>Superconductor Science and Technology</em>
+                  Wei-tao Lyu, Hua-Bai Li, Jie Hu, Sheng-Cai Shi,
+                  Qiang Zhi and Jing Li. (2026).
+                  <em>Superconductor Science and Technology</em>.
                 </p>
               </article>
             </li>
+
             <li>
               <article>
-                <a href="https://academic.oup.com/rasti/article/doi/10.1093/rasti/rzag007/8427318?login=true" data-placeholder-link>
-                  Laser-Based Frequency-to-Pixel Mapping Method for Submillimeter
-                  MKID Array
+                <a
+                  href="https://academic.oup.com/rasti/article/doi/10.1093/rasti/rzag007/8427318?login=true"
+                >
+                  Laser-Based Frequency-to-Pixel Mapping Method for
+                  Submillimeter MKID Array
                 </a>
+
                 <p>
-                  Lyu, W., Li, H. B., Zhi, Q., Li, J., &amp; Shi, S. (2026).
-                  <em>RAS Techniques and Instruments</em>, rzag007.
+                  Lyu, W., Li, H. B., Zhi, Q., Li, J.,
+                  &amp; Shi, S. (2026).
+                  <em>RAS Techniques and Instruments</em>,
+                  rzag007.
                 </p>
               </article>
             </li>
+
             <li>
-              <article>
-                <a href="http://www.shao.cas.cn/twxjz/wzll/202504/202504js/202512/P020251230363914200679.pdf" data-placeholder-link>
+              <article lang="zh-CN">
+                <a
+                  href="http://www.shao.cas.cn/twxjz/wzll/202504/202504js/202512/P020251230363914200679.pdf"
+                >
                   新一代亚毫米波偏振仪Roger
                 </a>
+
                 <p>
                   吕伟涛，黄俊锟，孙笳淋，李华白 (2025).
                   <em>天文学进展</em>, 第43卷 第4期.
                 </p>
               </article>
             </li>
+
             <li>
               <article>
-                <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13102/131021D/ROGer-Remote-Observing-from-Greenland/10.1117/12.3018247.short" data-placeholder-link>
+                <a
+                  href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13102/131021D/ROGer-Remote-Observing-from-Greenland/10.1117/12.3018247.short"
+                >
                   ROGer: Remote Observing from Greenland
                 </a>
+
                 <p>
-                  Weitao Lyu, Junkun Huang & Hua-bai Li (2024).
-                  <em>Millimeter, Submillimeter, and Far-Infrared Detectors and Instrumentation for Astronomy XII</em>, 131021D.
+                  Weitao Lyu, Junkun Huang &amp; Hua-bai Li (2024).
+                  <em>
+                    Millimeter, Submillimeter, and Far-Infrared
+                    Detectors and Instrumentation for Astronomy XII
+                  </em>,
+                  131021D.
                 </p>
               </article>
             </li>
+
             <li>
               <article>
-                <a href="https://iopscience.iop.org/article/10.1088/1674-1056/ad03dc/meta" data-placeholder-link>
+                <a
+                  href="https://iopscience.iop.org/article/10.1088/1674-1056/ad03dc/meta"
+                >
                   Disorder effects in NbTiN superconducting resonators
                 </a>
+
                 <p>
-                  Lyu, W. T., Zhi, Q., Hu, J., Li, J., &amp; Shi, S. C. (2024).
-                  <em>Chinese Physics B</em>, 33(2), 027401.
+                  Lyu, W. T., Zhi, Q., Hu, J., Li, J.,
+                  &amp; Shi, S. C. (2024).
+                  <em>Chinese Physics B</em>,
+                  33(2), 027401.
                 </p>
               </article>
             </li>
+
             <li>
               <article>
-                <a href="https://pubs.aip.org/aip/adv/article/11/9/095308/661562" data-placeholder-link>
-                  Cavity and ground effects on a superconducting microstrip
-                  resonator
+                <a
+                  href="https://pubs.aip.org/aip/adv/article/11/9/095308/661562"
+                >
+                  Cavity and ground effects on a superconducting
+                  microstrip resonator
                 </a>
+
                 <p>
-                  Lv, W. T., Ding, J. Q., Zhi, Q., Wang, Z., Li, J., &amp; Shi,
-                  S. C. (2021). <em>AIP Advances</em>, 11(9), 095308.
+                  Lv, W. T., Ding, J. Q., Zhi, Q., Wang, Z.,
+                  Li, J., &amp; Shi, S. C. (2021).
+                  <em>AIP Advances</em>,
+                  11(9), 095308.
                 </p>
               </article>
             </li>
@@ -215,51 +369,71 @@
         </div>
       </section>
 
-      <section class="section" id="experience">
+      <!-- Academic experience -->
+      <section
+        class="section"
+        id="experience"
+        aria-labelledby="experience-title"
+      >
         <div class="shell">
           <div class="section-heading">
             <p class="section-kicker">Academic Path</p>
-            <h2>Education and appointments</h2>
+
+            <h2 id="experience-title">
+              Education and appointments
+            </h2>
           </div>
 
           <div class="timeline">
             <article class="timeline-item">
-              <time>2022 - Present</time>
+              <div class="timeline-date">2022 – Present</div>
+
               <div>
                 <h3>Postdoctoral Fellow</h3>
+
                 <p>
-                  Department of Physics, Chinese University of Hong Kong.
-                  Supervisor: Prof. Hua-Bai Li.
+                  Department of Physics, Chinese University of
+                  Hong Kong. Supervisor: Prof. Hua-Bai Li.
                 </p>
               </div>
             </article>
+
             <article class="timeline-item">
-              <time>2022</time>
+              <div class="timeline-date">2022</div>
+
               <div>
                 <h3>Research Associate</h3>
+
                 <p>
-                  Department of Physics, Chinese University of Hong Kong.
-                  Supervisor: Prof. Hua-Bai Li.
+                  Department of Physics, Chinese University of
+                  Hong Kong. Supervisor: Prof. Hua-Bai Li.
                 </p>
               </div>
             </article>
+
             <article class="timeline-item">
-              <time>2015 - 2021</time>
+              <div class="timeline-date">2015 – 2021</div>
+
               <div>
                 <h3>PhD in Astronomy</h3>
+
                 <p>
-                  School of Astronomy and Space Science, University of Science
-                  and Technology of China. Advisor: Prof. Sheng-Cai Shi.
+                  School of Astronomy and Space Science,
+                  University of Science and Technology of China.
+                  Advisor: Prof. Sheng-Cai Shi.
                 </p>
               </div>
             </article>
+
             <article class="timeline-item">
-              <time>2011 - 2015</time>
+              <div class="timeline-date">2011 – 2015</div>
+
               <div>
                 <h3>Bachelor of Science in Physics</h3>
+
                 <p>
-                  School of Physics, Huazhong University of Science and
-                  Technology.
+                  School of Physics, Huazhong University of
+                  Science and Technology.
                 </p>
               </div>
             </article>
@@ -267,17 +441,26 @@
         </div>
       </section>
 
-      <section class="section project-section">
+      <!-- Project -->
+      <section
+        class="section project-section"
+        aria-labelledby="project-title"
+      >
         <div class="shell project-layout">
           <div>
             <p class="section-kicker">Research Project</p>
-            <h2>Hong Kong's Window on the Universe</h2>
+
+            <h2 id="project-title">
+              Hong Kong's Window on the Universe
+            </h2>
+
             <p>
-              Building a pioneering submillimetre astronomical camera. Role:
-              cryostat system integration with superconducting MKIDs and cold
-              optics.
+              Building a pioneering submillimetre astronomical
+              camera. Role: cryostat system integration with
+              superconducting MKIDs and cold optics.
             </p>
           </div>
+
           <div class="project-meta" aria-label="Project details">
             <span>Submillimetre camera</span>
             <span>Superconducting detectors</span>
@@ -286,50 +469,100 @@
         </div>
       </section>
 
-      <section class="section" id="skills">
+      <!-- Skills -->
+      <section
+        class="section"
+        id="skills"
+        aria-labelledby="skills-title"
+      >
         <div class="shell skills-layout">
           <div class="section-heading compact">
             <p class="section-kicker">Technical Skills</p>
-            <h2>Methods and tools</h2>
+            <h2 id="skills-title">Methods and tools</h2>
           </div>
+
           <div class="skill-groups">
             <article>
               <h3>Instrumentation</h3>
-              <p>Superconducting resonators, MKIDs, device characterization.</p>
+
+              <p>
+                Superconducting resonators, MKIDs,
+                device characterization.
+              </p>
             </article>
+
             <article>
               <h3>Cryogenics</h3>
-              <p>Cryostat integration and optimization for astronomy systems.</p>
+
+              <p>
+                Cryostat integration and optimization
+                for astronomy systems.
+              </p>
             </article>
+
             <article>
               <h3>Data Analysis</h3>
-              <p>Signal processing and calibration for superconducting devices.</p>
+
+              <p>
+                Signal processing and calibration
+                for superconducting devices.
+              </p>
             </article>
+
             <article>
               <h3>Software</h3>
-              <p>Simulation and data analysis tools for instrumentation work.</p>
+
+              <p>
+                Simulation and data analysis tools
+                for instrumentation work.
+              </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section contact-section" id="contact">
+      <!-- Contact -->
+      <section
+        class="section contact-section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
         <div class="shell contact-layout">
           <div>
             <p class="section-kicker">Contact</p>
-            <h2>Academic inquiries and collaboration</h2>
+
+            <h2 id="contact-title">
+              Academic inquiries and collaboration
+            </h2>
+
             <p>
-              For research discussions, collaboration, or publication details,
-              use the contact links below.
+              For research discussions, collaboration, or publication
+              details, use the contact links below.
             </p>
           </div>
+
           <address class="contact-links">
-            <a href="mailto:weitaolyu@cuhk.edu.hk">weitaolyu@cuhk.edu.hk</a>
-            <a href="tel:+85256658332">+852 5665 8332</a>
-            <!-- TODO: Replace # with your ORCID URL. -->
-            <a href="https://orcid.org/0000-0002-3845-4257" data-placeholder-link>ORCID</a>
-            <!-- TODO: Replace # with your GitHub or LinkedIn URL. -->
-            <a href="https://github.com/weitaolyu">GitHub / LinkedIn</a>
+            <a href="mailto:weitaolyu@cuhk.edu.hk">
+              weitaolyu@cuhk.edu.hk
+            </a>
+
+            <a href="tel:+85256658332">
+              +852 5665 8332
+            </a>
+
+            <a href="https://orcid.org/0000-0002-3845-4257">
+              ORCID
+              <span class="contact-detail">
+                0000-0002-3845-4257
+              </span>
+            </a>
+
+            <a href="https://github.com/weitaolyu">
+              GitHub
+              <span class="contact-detail">
+                github.com/weitaolyu
+              </span>
+            </a>
           </address>
         </div>
       </section>
@@ -337,11 +570,26 @@
 
     <footer class="site-footer">
       <div class="shell">
-        <span>© <span id="year">2026</span> Wei-Tao Lyu</span>
-        <a href="./Curriculum%20Vita.pdf">Download CV</a>
+        <span>
+          © <span id="year">2026</span> Wei-Tao Lyu
+        </span>
+
+        <button
+          class="text-link cv-export footer-export"
+          type="button"
+          data-export-pdf
+        >
+          Export CV as PDF
+        </button>
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <p
+      class="sr-only"
+      id="export-status"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    ></p>
   </body>
 </html>
